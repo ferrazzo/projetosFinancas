@@ -12,7 +12,7 @@ public class Conta {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private String titular;
+	private Cliente titular;
 	private String banco;
 	private String agencia;
 	private String numero;
@@ -20,7 +20,7 @@ public class Conta {
 
 	
 	
-	public Conta (String titular, String banco, String agencia, String numero) {
+	public Conta (Cliente titular, String banco, String agencia, String numero) {
 
 		this.titular = titular;
 		this.banco = banco;
@@ -73,11 +73,11 @@ public class Conta {
 		this.id = id;
 	}
 
-	public String getTitular() {
+	public Cliente getTitular() {
 		return titular;
 	}
 
-	public void setTitular(String titular) {
+	public void setTitular(Cliente titular) {
 		this.titular = titular;
 	}
 

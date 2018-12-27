@@ -17,7 +17,6 @@ public class Conta {
 	private String agencia;
 	private String numero;
 	private double saldo;
-	private int teste;
 	
 	
 	public Conta (Cliente titular, String banco, String agencia, String numero) {

@@ -21,6 +21,11 @@ public class Cliente {
 	@OneToOne
 	private Conta conta;
 	
+	public Cliente (String nome, String profissao,String endereco) {
+		this.nome = nome;
+		this.profissao = profissao;
+		this.endereco = endereco;
+	}
 	
 	public Integer getId() {
 		return id;
